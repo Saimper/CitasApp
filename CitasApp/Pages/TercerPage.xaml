@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CitasApp.Pages.TercerPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="TercerPage">
+
+    <VerticalStackLayout>
+
+
+        <Label
+            FontSize="18"
+            HorizontalOptions="Start"
+            Text="Ingresa la fecha (dd-mm-aaaa):" />
+
+        <Entry
+            x:Name="dateEntry"
+            HorizontalOptions="FillAndExpand"
+            Keyboard="Text"
+            Placeholder="DD-MM-AAAA" />
+
+
+        <Label
+            FontSize="18"
+            HorizontalOptions="Start"
+            Text="Selecciona la especialidad:" />
+
+        <Picker
+            x:Name="specialtyPicker"
+            Title="Elige una especialidad"
+            HorizontalOptions="FillAndExpand">
+            <Picker.Items>
+                <x:String>Cardiología</x:String>
+                <x:String>Dermatología</x:String>
+                <x:String>Pediatría</x:String>
+                <x:String>Oftalmología</x:String>
+
+            </Picker.Items>
+        </Picker>
+
+        <Label
+            FontSize="18"
+            HorizontalOptions="Start"
+            Text="Selecciona el médico(a):" />
+
+        <Picker
+            x:Name="doctorPicker"
+            Title="Elige un médico(a)"
+            HorizontalOptions="FillAndExpand">
+            <Picker.Items>
+                <x:String>Dr. Juan Pérez</x:String>
+                <x:String>Dra. Ana Martínez</x:String>
+                <x:String>Dr. Luis Gómez</x:String>
+                <x:String>Dra. Clara Ruiz</x:String>
+
+            </Picker.Items>
+        </Picker>
+
+
+        <Button
+            x:Name="reserveButton"
+            Margin="0,20"
+            BackgroundColor="#2196F3"
+            Clicked="OnReserveClicked"
+            CornerRadius="10"
+            FontSize="18"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Text="Reservar"
+            TextColor="White"
+            WidthRequest="250" />
+    </VerticalStackLayout>
+
+</ContentPage>

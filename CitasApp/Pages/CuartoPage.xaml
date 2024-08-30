@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CitasApp.Pages.CuartoPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="CuartoPage">
+    <VerticalStackLayout>
+
+        <Label
+            FontAttributes="Bold"
+            FontSize="36"
+            HorizontalOptions="Center"
+            Text="Cita reservada"
+            TextColor="#800080" />
+
+
+        <Label
+            x:Name="dateLabel"
+            FontSize="18"
+            HorizontalOptions="Center"
+            TextColor="#800080" />
+
+
+        <Label
+            x:Name="specialtyLabel"
+            FontSize="18"
+            HorizontalOptions="Center"
+            TextColor="#800080" />
+
+
+        <Label
+            x:Name="doctorLabel"
+            FontSize="18"
+            HorizontalOptions="Center"
+            TextColor="#800080" />
+
+
+        <BoxView HeightRequest="20" />
+
+
+        <Button
+            BackgroundColor="#4CAF50"
+            Clicked="OnAcceptClicked"
+            CornerRadius="10"
+            FontSize="18"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Text="Aceptar"
+            TextColor="White"
+            WidthRequest="200" />
+
+
+        <BoxView HeightRequest="20" />
+
+
+        <Button
+            BackgroundColor="#F44336"
+            Clicked="OnCancelClicked"
+            CornerRadius="10"
+            FontSize="18"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Text="Cancelar"
+            TextColor="White"
+            WidthRequest="200" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CitasApp.Pages.QuintoPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="QuintoPage">
+    <VerticalStackLayout>
+        <Label
+            FontAttributes="Bold"
+            FontSize="36"
+            HorizontalOptions="Center"
+            Text="Cita cancelada"
+            TextColor="#800080"
+            VerticalOptions="Center" />
+
+        <Button
+            BackgroundColor="#4CAF50"
+            Clicked="OnAcceptClicked"
+            CornerRadius="10"
+            FontSize="18"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Text="Aceptar"
+            TextColor="White"
+            WidthRequest="200" />
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

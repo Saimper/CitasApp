@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CitasApp.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+
+            <Label
+                SemanticProperties.HeadingLevel="Level1"
+                Style="{StaticResource Headline}"
+                Text="App de citas" />
+
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Tipo de documento:" />
+
+            <Picker
+                x:Name="myPicker"
+                Title="Elige un elemento"
+                SelectedIndexChanged="OnPickerSelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Cedula de Ciudadania</x:String>
+                    <x:String>Tarjeta de identidad</x:String>
+                    <x:String>Pasaporte</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Usuario" />
+
+            <Entry
+                x:Name="dataEntry"
+                Keyboard="Default"
+                Placeholder="Ingresa los datos aquí" />
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Contraseña:" />
+
+
+            <Entry
+                x:Name="dataEntry1"
+                IsPassword="True"
+                Keyboard="Default"
+                Placeholder="Ingresa la contraseña" />
+
+            <Button
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center"
+                Text="Iniciar sesión" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
